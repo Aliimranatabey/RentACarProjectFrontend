@@ -1,0 +1,69 @@
+#carHd{
+    position: relative;
+    margin-left: 600px;  
+}
+#Liste{
+    position: relative;
+    margin-left: 500px;
+}
+#tblbrand{
+    position: relative;
+    margin: 10px 0;
+            width: 150px;
+}
+#tblmode{
+    position: relative;
+    margin: 10px 0;
+            width: 50px;
+}
+#tblprice{
+    position: relative;
+    margin: 10px 0;
+            width: 70px;
+}
+#tblapply{
+    position: relative;
+    margin: 10px 0;
+            width: 150px;
+}
+#textBrand{
+    background-color:pink;
+}
+#textModel{
+    background-color:pink;
+}
+#textPrice{
+    background-color:pink;
+}
+#textYear{
+    background-color:pink;
+}
+#textKilometer{
+    background-color:pink;
+}
+#textFuel{
+    background-color:pink;
+}
+#textGear{
+    background-color:pink;
+}
+#textCasetype{
+    background-color:pink;
+}
+#textLocation{
+    background-color:pink;
+}
+#add {
+    background-color:rgb(214, 252, 109);
+    position: relative;
+    margin-left: 62px;
+}
+#brand {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#model {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#price {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#year {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#kilometer {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#fuel {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#gear{width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#casetype {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#location {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}

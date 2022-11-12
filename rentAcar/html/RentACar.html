@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/RentACar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery/RentACar.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 id=carHd class="text-hide">CAR LIST</h1>
+    <div class="container">
+        <table class="table" id="liste">
+            <tr>
+                <th class="table-danger" scope="col" id=tblId>Id</th>
+                <th class="table-danger" scope="col" id=tblBrand>Brand</th>
+                <th class="table-danger" scope="col" id=tblModel>Model</th>
+                <th class="table-danger" scope="col" id=tblPrice>Price</th>
+                <th class="table-danger" scope="col" id=tblYear>Year</th>
+                <th class="table-danger" scope="col" id=tblKilometer>Kilometer</th>
+                <th class="table-danger" scope="col" id=tblFuel>Fuel</th>
+                <th class="table-danger" scope="col" id=tblGear>Gear</th>
+                <th class="table-danger" scope="col" id=tblCaseType>CaseType</th>
+                <th class="table-danger" scope="col" id=tblLocation>Location</th>
+                <th class="table-danger" scope="col">Operations</th>
+
+            </tr>
+            <tbody id="carList">
+                <div class="input-group rounded">
+
+                    <input id="searchBrand" type="search" onkeyup="searchCar()" class="form-control rounded"
+                        placeholder="Search Brand" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input id="searchModel" type="search" onkeyup="searchCar()" class="form-control rounded"
+                        placeholder="Search Model" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input id="searchPrice" type="search" onkeyup="searchCar()" class="form-control rounded"
+                        placeholder="Search Price" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input id="searchYear" type="search" onkeyup="searchCar()" class="form-control rounded"
+                        placeholder="Search Year" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input id="searchKilometer" type="search" onkeyup="searchCar()" class="form-control rounded"
+                        placeholder="Search Kilometer" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input id="searchFuel" type="search" onkeyup="searchCar()" class="form-control rounded"
+                        placeholder="Search Fuel" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input id="searchGear" type="search" onkeyup="searchCar()" class="form-control rounded"
+                        placeholder="Search Gear" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input id="searchCaseType" type="search" onkeyup="searchCar()" class="form-control rounded"
+                        placeholder="Search CaseType" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input id="searchLocation" type="search" onkeyup="searchCar()" class="form-control rounded"
+                        placeholder="Search Location" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+
+                </div>
+            </tbody>
+        </table>
+    </div><br>
+    <div id="appId" style="margin-left: 350px;">
+        <form action="#" id="formOne" onsubmit="saveCar('#formOne','memberSave')">
+            <input type="text" id="textId" style="display: none;">
+            <font id=brand color="blue">Brand :</font> <input type="text" id="textBrand" scope="row" required>
+            <font id=model color="blue">Model :</font> <input type="text" id="textModel" scope="row" required>
+            <font id=price color="blue">Price :</font> <input type="text" id="textPrice" scope="row" required>
+            <font id=year color="blue">Year :</font> <input type="text" id="textYear" scope="row" required>
+            <font id=kilometer color="blue">Kilometer :</font> <input type="text" id="textKilometer" scope="row" required>
+            <font id=fuel color="blue">Fuel :</font> <input type="text" id="textFuel" scope="row" required>
+            <font id=gear color="blue">Gear :</font> <input type="text" id="textGear" scope="row" required>
+            <font id=casetype color="blue">Case Type :</font> <input type="text" id="textCasetype" scope="row" required>
+            <font id=location color="blue">Location :</font> <input type="text" id="textLocation" scope="row" required>
+            <input class="btn btn-outline-success" type="submit" value="SAVE" id="add" style="width: 10%; height: 10%;">
+            <input class="btn btn-outline-success" type="button" onclick="clearForm()" value="CLEAR" id="clear"
+                style="width: 10%; height: 10%;">
+        </form>
+    </div>
+</body>
+
+</html>

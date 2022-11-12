@@ -1,0 +1,47 @@
+#customerHd{
+    position: relative;
+    margin-left: 550px;
+}
+#Liste{
+    position: relative;
+    margin-left: 400px;
+}
+#appid{
+    position: relative;
+    margin-right: 400px;
+    margin-bottom: 200px;
+}
+#selectId{
+    position: relative;
+    margin-right: 100px;
+}
+#textName{
+    background-color:pink;
+}
+#textSurname{
+    background-color:pink;
+}
+#textIdentificationNumber{
+    background-color:pink;
+}
+#textAge{
+    background-color:pink;
+}
+#checkActive{
+    background-color:pink;
+}
+#selectId{
+    background-color: pink;
+}
+#add {
+    background-color:rgb(214, 252, 109);
+    position: relative;
+    margin-left: 170px;
+}
+#name {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#surname {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#identificationNumber {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#age {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#gender {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#carBrand {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
+#carModel {width:100px;height:100px;padding:5px;background:#dab3da;color:rgb(8, 42, 44);}
